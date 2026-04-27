@@ -2,5 +2,3 @@ title: Test blog
 description: Test blog goes in all fields
 theme: minima
 permalink: pretty
-baseurl: ""   # was /repo-name, now empty
-url: "https://jtolin.github.io"
