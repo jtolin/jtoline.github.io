@@ -5,12 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<h1>Blog</h1>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
-      <span>{{ post.date | date: "%B %d, %Y" }}</span>
-    </li>
-  {% endfor %}
-</ul>
+<style>
+    .footer {
+        text-align: center;
+        bottom: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <h1>Blog</h1>
+    <p>Welcome to my goat-based blog! Here are some of my goat posts for you to enjoy:</p>
+    <br><br>
+    <ul>
+    {% for post in site.posts %}
+        <li>
+        <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+        <span>{{ post.date | date: "%B %d, %Y" }}</span>
+        </li>
+    {% endfor %}
+    </ul>
+    <br><br>
+    <div class="center-text">
+        <img src="/jtoline.github.io/assets/images/goat.png" alt="Test Goat Please Ignore" class="center-img">
+    </div>
+    <div class="footer">
+        <p>Copyright 2026 &#128016; All Rights Reserved.</p>
+    </div>
+</body>
