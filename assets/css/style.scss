@@ -12,10 +12,12 @@ p {
 
 ul li span {
   font-size: clamp(0.75rem, 2vw, 0.85rem);
+  text-align: center;
 }
 
 ul li a {
   font-size: clamp(0.9rem, 2.5vw, 1rem);
+  text-align: center;
   padding: 0.25rem 0;
   display: inline-block;
 }
